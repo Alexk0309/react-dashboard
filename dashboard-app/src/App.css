@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #937DC2;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -36,3 +36,30 @@
     transform: rotate(360deg);
   }
 }
+
+.dashboard-container {
+  background-color: white;
+  height: 200px;
+  width:300px;
+  padding: 0px 50px 0px 50px;
+  border-radius: 20px;
+}
+
+.header {
+  
+}
+
+.btn {
+  display: inline-block;
+  background: #6F38C5;
+  color: white;
+  border: None;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: inherit;
+}
+

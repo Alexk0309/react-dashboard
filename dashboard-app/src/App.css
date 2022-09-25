@@ -38,28 +38,65 @@
 }
 
 .dashboard-container {
+  text-align: start;
   background-color: white;
-  height: 200px;
-  width:300px;
-  padding: 0px 50px 0px 50px;
+  height: auto;
+  width:auto;
+  padding: 0px 50px 50px 50px;
   border-radius: 20px;
 }
 
-.header {
-  
+.header{
+  display: flex;
+  flex-direction: row;
+  gap: 70px;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0px;
 }
+
 
 .btn {
   display: inline-block;
   background: #6F38C5;
   color: white;
+  font-weight: 500;
   border: None;
   padding: 10px 20px;
-  margin: 5px;
   border-radius: 5px;
+  margin-top: 10px;
   cursor: pointer;
   text-decoration: none;
   font-size: 15px;
   font-family: inherit;
+  height: 40px;
 }
+
+.task {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #e4d7ff;
+  color: black;
+  margin-bottom:15px;
+  border-radius: 10px;
+  padding: 0px 10px;
+  gap: 50px;
+}
+
+.task-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.task-name {
+  margin-bottom:0px;
+}
+
+.task-day {
+  margin-top: 0px;
+}
+
+
 

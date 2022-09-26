@@ -1,9 +1,8 @@
-import Button from './Button.js'
 import {FaTimes} from 'react-icons/fa'
 
-const Task = ({task, onDelete}) => {
+const Task = ({task, onDelete, onToggle}) => {
     return (
-        <div className='task'>
+        <div className='task' onDoubleClick={ () => onToggle(task.id) }>
             <div className='task-details'>
                 <h3 className='task-name'>
                     {task.text}
@@ -12,7 +11,7 @@ const Task = ({task, onDelete}) => {
             </div>
             <FaTimes 
             style={{color:'red', cursor:'pointer', height:'130'}} 
-            onClick={ () => onDelete(task.id) }
+            onClick={ () => onDelete(task.id) } 
             />
         </div>
     )

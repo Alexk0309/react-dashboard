@@ -85,6 +85,10 @@
   gap: 50px;
 }
 
+.task.reminder {
+  border-left: 10px solid green;
+}
+
 .task-details {
   display: flex;
   flex-direction: column;
@@ -98,5 +102,46 @@
   margin-top: 0px;
 }
 
+.add-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
 
+.form-control {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+}
+
+#reminder-checkbox {
+  width: 20px;
+  margin-top: 7px;
+  margin-left: 20px;
+}
+
+.form-control.reminder-checkbox {
+  display: flex;
+  flex-direction: row;
+}
+
+input {
+  height: 20px;
+}
+
+#submit-btn {
+  display: inline-block;
+  background: #6F38C5;
+  color: white;
+  font-weight: 500;
+  border: None;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: inherit;
+  height: 40px;
+}
 

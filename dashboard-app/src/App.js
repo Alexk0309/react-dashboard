@@ -2,6 +2,7 @@ import Header from './components/Header.js'
 import './App.css';
 import Tasks from './components/Tasks.js'
 import { useState } from 'react'
+import AddTask from './components/AddTask.js'
 
 function App() {
 
@@ -42,6 +43,7 @@ const toggleReminder = (id) => {
       <header className="App-header">
         <div className="dashboard-container">
           <Header name={"Alex"} />
+          <AddTask/>
           {tasks.length > 0 ? (
             <Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleReminder}/>
           ) : (

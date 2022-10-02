@@ -50,13 +50,17 @@ const searchTask = (text) => {
   setTasks(tasks.filter((task) => task.text.toLowerCase().match(text.toLowerCase())))
 }
 
+const clearSearch = () => {
+  setTasks([])
+}
+
   return (
     <div className="App">
       <header className="App-header">
         <div className="dashboard-container">
           <Header name={"Alex"} onAdd={() => setShowAddTask(!showAddTask)} showAdd={showAddTask}/>
           {showAddTask && <AddTask onAdd={addTask}/>}
-          <Search searchTask={searchTask}></Search>
+          <Search searchTask={searchTask} clearSearch={clearSearch}></Search>
           {tasks.length > 0 ? (
             <Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleReminder} onAdd={addTask}/>
           ) : (

@@ -114,18 +114,6 @@
   margin-bottom: 5px;
 }
 
-.search-form {
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 40px;
-  align-items: center;
-  gap: 50px;
-}
-
-#search-input {
-  width: 250px;
-}
-
 #reminder-checkbox {
   width: 20px;
   margin-top: 7px;
@@ -157,6 +145,24 @@ input {
   height: 40px;
 }
 
+.search-container {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 40px;
+  gap: 10px;
+}
+
+.search-form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+#search-input {
+  width: 250px;
+}
+
 #search-btn {
   display: inline-block;
   background: #6F38C5;
@@ -172,4 +178,6 @@ input {
   font-family: inherit;
   height: 40px;
 }
+
+
 
